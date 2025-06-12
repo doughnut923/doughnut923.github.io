@@ -22,7 +22,7 @@ export default function Page() {
         </div>
         {/*Text Container*/}
         <div className="mt-[20rem] md:mt-0 md:col-span-5 h-full">
-          <div className="p-3 md:grid md:grid-cols-2 h-full relative grid-flow-row auto-rows-max">
+          <div className="p-3 md:grid md:grid-cols-2 md:h-full h-fit relative grid-flow-row auto-rows-max">
             <div className="col-span-2 h-fit hidden md:block">
               <h1 className="font-bold mb-4 text-right text-xxl line-h leading-[0.65] my-0" dir="rtl">JONAS</h1>
               <h1 className="font-bold mb-2 text-right text-xxl leading-[0.65] my-0" dir="rtl">.FOKKKKKK</h1>
@@ -40,9 +40,9 @@ export default function Page() {
               <CoolMesh />
               <Navigation />
             </div>
-            <div className="px-3 grid grid-cols-2 w-full absolute bottom-3">
+            <div className="pt-16 px-0 md:px-3 grid grid-cols-2 w-full md:absolute bottom-3">
               <hr className="col-span-6 h-[3px] bg-black" />
-              <h4>[MADE IN HONG KONG]</h4>
+              <h4 className="text-[16px]">[MADE IN HONG KONG]</h4>
               <h4 className="text-right">[FRI 2:37 PM]</h4>
             </div>
           </div>
