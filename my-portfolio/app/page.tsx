@@ -1,12 +1,30 @@
+'use client';
+
 import Image from "next/image";
 import { socialLinks } from "./config";
 import Barcode from "./components/barcode";
 import CoolMesh from "./components/cool-mesh";
 import Navigation from "./components/navigation";
+import useMousePosition from "./components/useMousePosition";
+import { motion } from "framer-motion";
 
 export default function Page() {
+
+  const { x, y } = useMousePosition();
+
+
   return (
     <>
+
+      <motion.div
+        className="cursor-custom dark:invert md:block hidden"
+        animate={{
+          left: `${x}px`,
+          top: `${y}px`,
+        }}
+        transition={{ type: "tween", ease: "backOut" }}
+      ></motion.div>
+
       <section className="md:grid col-span-full grid-cols-1 md:grid-cols-9 md:gap-6 relative h-screen w-full">
         {/*Image Container*/}
         <div className="mt-5 md:hidden h-fit">
@@ -33,11 +51,11 @@ export default function Page() {
               <h1 className="font-bold mb-2 text-right text-xxl leading-[0.65] my-0 stroked appear-right hidden md:block lg:hidden" dir="rtl">.FOKKK</h1>
               <hr className="h-[3px] bg-black mt-20" />
             </div>
-            <div className="mt-2 overflow-x-hidden">
+            <div className="mt-2 overflow-hidden">
               <div className="w-32 md:w-64 h-fit hidden md:block appear-left">
                 <Barcode />
               </div>
-              <h2 className="text-left font-bold text-2xl md:hidden pt-0 appear-right">EST. 2005</h2> 
+              <h2 className="text-left font-bold text-2xl md:hidden pt-0 appear-right">EST. 2005</h2>
               <p className="w-64 text-justify hover:font-bold leading-[1] smooth-ease-s appear-left">Your software dev, ui/ux designer, photographer, traveler, final boss of compsci (not really), average autism enjoyer.</p>
               <img className="mt-2 h-32 grayscale hidden md:block hover:h-40 smooth-ease-l appear-left" src="https://i.pinimg.com/originals/94/f0/65/94f0653d30bd368e5dfe492f0f60e01e.gif" alt="loading..." />
             </div>

@@ -9,21 +9,21 @@
 
 @font-face {
   font-family: Primary-Font;
-  src: url(/fonts/HelveticaNeueHeavy.otf) format('opentype');
+  src: url("./fonts/HelveticaNeueHeavy.otf") format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: Primary-Font;
-  src: url(/fonts/HelveticaNeueBlack.otf) format('opentype');
+  src: url("./fonts/HelveticaNeueMedium.otf") format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: Secondary-Font;
-  src: url(/fonts/JetBrainsMono-Regular.ttf) format('truetype');
+  src: url("./fonts/JetBrainsMono-Regular.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,8 +31,22 @@
 
 @font-face {
   font-family: Secondary-Font;
-  src: url(/fonts/JetBrainsMono-Bold.ttf) format('truetype');
+  src: url("./fonts/JetBrainsMono-Bold.ttf") format('truetype');
   font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Secondary-Font;
+  src: url("./fonts/JetBrainsMono-Light.ttf") format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Secondary-Font;
+  src: url("./fonts/JetBrainsMono-Medium.ttf") format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -47,6 +61,7 @@ p, a, li{
 
 /* Light theme colors */
 :root {
+  background-color: #F1F1F1;
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
   --sh-sign: #8996a3;
@@ -248,4 +263,17 @@ table {
 
 .appear-right{
   animation: appear-right 1.5s cubic-bezier(1.0, 0, 0, 1) forwards;
+}
+
+.cursor-custom {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 0;
+  top: 0;
+  background-color: #111010;
+  border-radius: 50%;
+  overflow: visible;
+  mask-size: 5px;
+
 }

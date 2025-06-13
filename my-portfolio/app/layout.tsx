@@ -7,6 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
+import { ReactLenis, useLenis } from 'lenis/react'
 
 
 export const metadata: Metadata = {
@@ -52,8 +53,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
+
   return (
+    
     <html lang="en">
+
+      <ReactLenis root />
       <head>
         <link
           rel="alternate"
@@ -74,7 +81,7 @@ export default function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="antialiased flex flex-col items-center justify-center mx-auto lg:mt-0 overflow-x-hidden lg:max-w-[1600px] mb-20 lg:mb-40">
+      <body className="scroll-smooth antialiased flex flex-col items-center justify-center mx-auto lg:mt-0 overflow-x-hidden lg:max-w-[1600px] mb-20 lg:mb-40">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
