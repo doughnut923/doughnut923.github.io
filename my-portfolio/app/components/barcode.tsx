@@ -1,7 +1,7 @@
 export default function Barcode() {
     return (
-        <div className="w-32 md:w-64 h-fit hidden md:block ">
-            <svg width="294" height="48" viewBox="0 0 294 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+        <div className="">
+            <svg width="294" height="48" viewBox="0 0 294 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full dark:invert">
                 <path d="M3.88889 0.802956H0.122808V47.2315H3.88889V0.802956Z" fill="black" />
                 <path d="M7.65497 0.802956H5.77193V47.2315H7.65497V0.802956Z" fill="black" />
                 <path d="M13.3041 0.802956H11.4211V47.2315H13.3041V0.802956Z" fill="black" />
@@ -46,6 +46,8 @@ export default function Barcode() {
                 <path d="M288.228 0.802956H286.345V47.2315H288.228V0.802956Z" fill="black" />
                 <path d="M293.877 0.802956H290.111V47.2315H293.877V0.802956Z" fill="black" />
             </svg>
+
+
 
         </div>
     );
