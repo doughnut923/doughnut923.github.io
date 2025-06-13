@@ -22,6 +22,13 @@
 }
 
 @font-face {
+  font-family: Primary-Font;
+  src: url("./fonts/HelveticaNeueLightItalic.otf") format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
   font-family: Secondary-Font;
   src: url("./fonts/JetBrainsMono-Regular.ttf") format('truetype');
   font-weight: normal;
@@ -53,6 +60,12 @@
 
 html{
   font-family: Primary-Font, Arial, Helvetica, sans-serif;
+}
+
+span{
+  font-family: Primary-Font, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 p, a, li{
@@ -204,10 +217,10 @@ table {
 }
 
 .stroked {
-  color: white;
+  color: black;
   inset: 0 0 0 0 !important;
   -webkit-text-stroke-width: 5px !important;
-  -webkit-text-stroke-color: #fefefe !important;
+  -webkit-text-stroke-color: #111010 !important;
   -webkit-text-fill-color: transparent !important;
 }
 
@@ -266,7 +279,7 @@ table {
 }
 
 .cursor-custom {
-  position: absolute;
+  position: fixed;
   width: 5px;
   height: 5px;
   left: 0;

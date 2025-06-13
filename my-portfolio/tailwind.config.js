@@ -17,6 +17,20 @@ module.exports = {
         '3xl': '2rem',
         'xxl': '12.25rem'
       },
+      keyframes: {
+        "slide-left": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "slide-right": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
+      animation: {
+        "slide-left": "slide-left 25s linear infinite",
+        "slide-right": "slide-right 25s linear infinite ",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
