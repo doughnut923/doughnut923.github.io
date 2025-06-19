@@ -10,7 +10,7 @@ export default function Landing() {
             {/*Image Container*/}
             <div className="mt-5 md:hidden h-fit">
                 <h1 className="font-bold mb-4 text-right text-7xl line-h leading-[0.65] my-0 appear-right" dir="rtl">JONAS</h1>
-                <h1 className="font-bold mb-2 text-left text-7xl leading-[0.65] my-0 stroked appear-left" dir="ltr">FOKKKK.</h1>
+                <h1 className="font-bold mb-2 text-left text-7xl leading-[0.65] my-0 stroked appear-left dark:invert" dir="ltr">FOKKKK.</h1>
             </div>
             <div className="top-24 md:top-0 p-3 md:py-4 md:col-span-4 h-96 w-full md:w-auto md:h-screen overflow-hidden absolute z-[-1] md:relative">
                 <div className="z-10 h-full w-full overflow-hidden move-right absolute dark:bg-[#111010] bg-[#F1F1F1] "></div>
@@ -28,8 +28,8 @@ export default function Landing() {
                 <div className="p-3 md:grid md:grid-cols-2 md:h-full h-fit relative grid-flow-row auto-rows-max">
                     <div className="col-span-2 h-fit hidden md:block">
                         <h1 className="font-bold mb-4 text-right text-xxl line-h leading-[0.65] my-0 appear-right" dir="rtl">JONAS</h1>
-                        <h1 className="font-bold mb-2 text-right text-xxl leading-[0.65] my-0 stroked appear-right hidden md:hidden lg:block" dir="rtl">.FOKKKKKK</h1>
-                        <h1 className="font-bold mb-2 text-right text-xxl leading-[0.65] my-0 stroked appear-right hidden md:block lg:hidden" dir="rtl">.FOKKK</h1>
+                        <h1 className="font-bold mb-2 text-right text-xxl leading-[0.65] my-0 stroked appear-right hidden md:hidden lg:block dark:invert" dir="rtl">.FOKKKKKK</h1>
+                        <h1 className="font-bold mb-2 text-right text-xxl leading-[0.65] my-0 stroked appear-right hidden md:block lg:hidden dark:invert" dir="rtl">.FOKKK</h1>
                         <hr className="h-[3px] bg-black mt-20" />
                     </div>
                     <div className="mt-2 overflow-hidden">

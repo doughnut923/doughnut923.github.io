@@ -23,7 +23,7 @@ export default function SlidingTextBackground() {
             ${directions[idx] === "right" ? "animate-slide-right bg-transparent text-[#6f6f6f]" : "animate-slide-left text-[#f1f1f1]"}
           `}
                 >
-                    <span className={`h-full leading-tight inline-block text-7xl md:text-9xl min-w-full ${directions[idx] === "right" ? "bg-transparent" : "bg-[#6f6f6f]"} `}>{text.repeat(30)}</span>
+                    <span className={`h-full leading-tight inline-block text-7xl md:text-9xl min-w-full ${directions[idx] === "right" ? "bg-transparent" : "bg-[#6f6f6f] dark:bg-transparent"} `}>{text.repeat(30)}</span>
                 </div>
             ))}
             <BigAssMesh />
@@ -34,7 +34,7 @@ export default function SlidingTextBackground() {
             ${directions[idx] === "right" ? "animate-slide-right bg-transparent text-[#6f6f6f]" : "animate-slide-left text-[#f1f1f1]"}
           `}
                 >
-                    <span className={`h-full leading-tight inline-block text-7xl md:text-9xl min-w-full ${directions[idx] === "right" ? "bg-transparent" : "bg-[#6f6f6f]"} `}>{text.repeat(30)}</span>
+                    <span className={`h-full leading-tight inline-block text-7xl md:text-9xl min-w-full ${directions[idx] === "right" ? "bg-transparent" : "bg-[#6f6f6f] dark:bg-transparent"} `}>{text.repeat(30)}</span>
                 </div>
             ))}
 
@@ -45,7 +45,7 @@ export default function SlidingTextBackground() {
             ${directions[idx] === "right" ? "animate-slide-right bg-transparent text-[#6f6f6f]" : "animate-slide-left text-[#f1f1f1]"}
           `}
                 >
-                    <span className={`h-full leading-tight inline-block text-7xl md:text-9xl min-w-full ${directions[idx] === "right" ? "bg-transparent" : "bg-[#6f6f6f]"} `}>{text.repeat(30)}</span>
+                    <span className={`h-full leading-tight inline-block text-7xl md:text-9xl min-w-full ${directions[idx] === "right" ? "bg-transparent" : "bg-[#6f6f6f] dark:bg-transparent"} `}>{text.repeat(30)}</span>
                 </div>
             ))}
         </div>

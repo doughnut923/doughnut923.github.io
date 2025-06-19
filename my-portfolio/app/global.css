@@ -219,7 +219,7 @@ table {
 .stroked {
   color: black;
   inset: 0 0 0 0 !important;
-  -webkit-text-stroke-width: 5px !important;
+  -webkit-text-stroke-width: 7px !important;
   -webkit-text-stroke-color: #111010 !important;
   -webkit-text-fill-color: transparent !important;
 }
