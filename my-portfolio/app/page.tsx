@@ -6,6 +6,7 @@ import useMousePosition from "./components/useMousePosition";
 import { motion } from "framer-motion";
 import Landing from "./components/landing";
 import CV from "./components/cv";
+import Works from "./works";
 
 export default function Page() {
 
@@ -26,6 +27,7 @@ export default function Page() {
 
       <Landing/>
       <CV/>
+      <Works/>
 
     </>
 
