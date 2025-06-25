@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Landing from "./components/landing";
 import CV from "./components/cv";
 import Works from "./works";
+import CFA from "./cfa";
 
 export default function Page() {
 
@@ -28,7 +29,8 @@ export default function Page() {
       <Landing/>
       <CV/>
       <Works/>
-
+      <CFA/>
+      
     </>
 
   );

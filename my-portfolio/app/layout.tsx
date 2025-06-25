@@ -80,7 +80,7 @@ export default function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="scroll-smooth antialiased flex flex-col items-center justify-center mx-auto lg:mt-0 overflow-x-hidden lg:max-w-[1600px] mb-20 lg:mb-40">
+      <body className="scroll-smooth antialiased flex flex-col items-center justify-center mx-auto lg:mt-0 overflow-x-hidden lg:max-w-[1600px] mb-2 lg:mb-3">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

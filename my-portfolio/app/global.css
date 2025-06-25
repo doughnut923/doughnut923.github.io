@@ -68,7 +68,7 @@ span{
   font-style: italic;
 }
 
-p, a, li{
+p, a, li, button{
   font-family: Secondary-Font, Consolas;
 }
 
