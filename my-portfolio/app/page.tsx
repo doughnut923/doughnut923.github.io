@@ -1,7 +1,5 @@
 'use client';
 
-import Image from "next/image";
-import { socialLinks } from "./config";
 import useMousePosition from "./components/useMousePosition";
 import { motion } from "framer-motion";
 import Landing from "./components/landing";
@@ -12,7 +10,6 @@ import CFA from "./cfa";
 export default function Page() {
 
   const { x, y } = useMousePosition();
-
 
   return (
     <>

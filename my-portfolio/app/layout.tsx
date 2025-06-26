@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
-import { ReactLenis, useLenis } from 'lenis/react'
+import { ReactLenis } from 'lenis/react'
 
 
 export const metadata: Metadata = {
