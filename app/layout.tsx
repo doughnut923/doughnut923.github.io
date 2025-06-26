@@ -6,7 +6,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
-import { ReactLenis } from 'lenis/react'
+import {Lenis} from 'lenis/dist/lenis-react';
+
 
 
 export const metadata: Metadata = {
@@ -59,7 +60,7 @@ export default function RootLayout({
     
     <html lang="en">
 
-      <ReactLenis root />
+      <Lenis root />
       <head>
         <link
           rel="alternate"
