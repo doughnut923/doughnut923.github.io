@@ -15,7 +15,7 @@ export default function Landing() {
             <div className="top-24 md:top-0 p-3 md:py-4 md:col-span-4 h-96 w-full md:w-auto md:h-screen overflow-hidden absolute z-[-1] md:relative">
                 <div className="z-10 h-full w-full overflow-hidden move-right absolute dark:bg-[#111010] bg-[#F1F1F1] "></div>
                 <img
-                    src="/profile.jpg"
+                    src="profile.JPG"
                     alt="Profile Picture"
                     className="object-cover h-full w-full overflow-hidden"
                 />
