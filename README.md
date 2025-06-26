@@ -1,6 +1,4 @@
-#LIVE ON [http://doughnut923.github.io/](http://doughnut923.github.io/) ✨✨
-
-\
+# LIVE ON [http://doughnut923.github.io/](http://doughnut923.github.io/) ✨✨
 
 # Nextfolio
 
