@@ -1,11 +1,21 @@
+import { get } from "http";
 import Barcode from "./barcode";
 import CoolMesh from "./cool-mesh";
 import Navigation from "./navigation";
 
 export default function Landing() {
 
+    const getTime = () => {
+        // Get the current time in Hong Kong timezone
+        // Format it to [WEEK 00:00pm/am]
+        const options: Intl.DateTimeFormatOptions = { weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Hong_Kong' };
+        const date = new Date();
+        const formattedTime = date.toLocaleTimeString('en-US', options);
+        return `[${formattedTime}]`;
+    }
+
     return (
-        
+
         <section className="relative md:grid col-span-full grid-cols-1 md:grid-cols-9 md:gap-6 h-screen w-full">
             {/*Image Container*/}
             <div className="mt-5 md:hidden h-fit">
@@ -49,7 +59,7 @@ export default function Landing() {
                     <div className="pt-16 px-0 md:px-3 grid grid-cols-2 w-full md:absolute bottom-3">
                         <hr className="col-span-6 h-[3px] bg-black" />
                         <h4 className="text-[16px]">[MADE IN HONG KONG]</h4>
-                        <h4 className="text-right">[FRI 2:37 PM]</h4>
+                        <h4 className="text-right">{getTime()}</h4>
                     </div>
                 </div>
 
