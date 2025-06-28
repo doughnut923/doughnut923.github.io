@@ -16,7 +16,7 @@ export default function Landing() {
 
     return (
 
-        <section className="relative md:grid col-span-full grid-cols-1 md:grid-cols-9 md:gap-6 h-screen w-full">
+        <section id="landing" className="relative md:grid col-span-full grid-cols-1 md:grid-cols-9 md:gap-6 h-screen w-full">
             {/*Image Container*/}
             <div className="mt-5 md:hidden h-fit">
                 <h1 className="font-bold mb-4 text-right text-7xl line-h leading-[0.65] my-0 appear-right" dir="rtl">JONAS</h1>
