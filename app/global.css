@@ -278,6 +278,22 @@ table {
   animation: appear-right 1.5s cubic-bezier(1.0, 0, 0, 1) forwards;
 }
 
+@keyframes appear-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.appear-up {
+  animation: appear-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
 .cursor-custom {
   position: fixed;
   width: 5px;
