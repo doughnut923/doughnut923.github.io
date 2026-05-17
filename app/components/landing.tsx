@@ -37,8 +37,8 @@ export default function Landing() {
             <div className="mt-[20rem] md:mt-0 md:col-span-5 h-full">
                 <div className="p-3 md:grid md:grid-cols-2 md:h-full h-fit relative grid-flow-row auto-rows-max">
                     <div className="col-span-2 h-fit hidden md:block">
-                        <h1 className="font-bold mb-4 text-right text-xxl line-h leading-[0.65] my-0 appear-right" dir="rtl">JONAS</h1>
-                        <h1 className="font-bold mb-2 text-right text-xxl leading-[0.65] my-0 stroked appear-right hidden md:hidden lg:block dark:invert" dir="rtl">.FOKKKKKK</h1>
+                        <h1 className="font-bold mt-3 mb-4 text-right text-xxl line-h leading-[0.65] appear-right" dir="rtl">JONAS</h1>
+                        <h1 className="font-boldmt-3 mb-2 text-right text-xxl leading-[0.65] my-0 stroked appear-right hidden md:hidden lg:block dark:invert" dir="rtl">.FOKKKKKK</h1>
                         <h1 className="font-bold mb-2 text-right text-xxl leading-[0.65] my-0 stroked appear-right hidden md:block lg:hidden dark:invert" dir="rtl">.FOKKK</h1>
                         <hr className="h-[3px] bg-black mt-20" />
                     </div>
