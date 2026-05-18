@@ -40,6 +40,20 @@ No test, lint, or typecheck scripts exist. Verify changes with `pnpm build`.
 - RSS/Atom/JSON feeds generated at build time from blog content.
 - Both `package-lock.json` and `pnpm-lock.yaml` exist — use `pnpm` locally.
 
+## Theme & Dark Mode
+
+- `tailwind.config.js` uses `darkMode: "class"`.
+- `app/layout.tsx` has a `<script dangerouslySetInnerHTML>` in `<head>` that applies the `dark` class before React hydrates — do not remove; it prevents hydration mismatch.
+- Custom color `dark: '#111010'` is defined in `tailwind.config.js`. Prefer `text-[#111010] dark:text-white` over `text-dark dark:text-white` — the custom utility class can be overridden incorrectly in production builds due to CSS specificity.
+- `.stroked` class (stroked/outline text) has a `.dark .stroked` override in `app/global.css` for stroke color adaptation.
+
+## Animations
+
+- **Use CSS `@keyframes` for opacity/visibility transitions**, not React-driven `transition-*` class swaps. CSS transitions fail in static export because React hydration timing doesn't reliably trigger them. Use `fade-in`, `appear-left`, `appear-right`, `appear-up` from `app/global.css`.
+- Staggered entrance animations use `.delay-100` through `.delay-700` classes (defined in `app/global.css`).
+- Elements with slide-in animations should be wrapped in `overflow-hidden` containers to hide the off-screen starting position.
+- `.clip-right` wraps elements that should clip overflow on the right side only (used for large text that bleeds past container).
+
 ## Workflow
 
 - Use subagents for planning, research, and implementing changes. Delegate file edits, component creation, and content updates to subagents rather than doing them inline.
