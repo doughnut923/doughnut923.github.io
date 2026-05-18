@@ -18,11 +18,11 @@ export default function Landing() {
 
         <section id="landing" className="relative md:grid col-span-full grid-cols-1 md:grid-cols-9 md:gap-6 h-screen w-full">
             {/*Image Container*/}
-            <div className="mt-5 md:hidden h-fit">
-                <div className="overflow-hidden">
+            <div className="mt-8 md:hidden h-fit">
+                <div className="overflow-hidden py-1">
                     <h1 className="font-bold mb-4 text-right text-7xl line-h leading-[0.65] my-0 appear-right delay-100 text-[#111010] dark:text-white" dir="rtl">JONAS</h1>
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden py-1">
                     <h1 className="font-bold mb-2 text-left text-7xl leading-[0.65] my-0 stroked appear-left delay-200 text-[#111010] dark:text-white" dir="ltr">FOKKKK.</h1>
                 </div>
             </div>
