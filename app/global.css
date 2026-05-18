@@ -228,6 +228,12 @@ table {
   -webkit-text-stroke-color: #F1F1F1 !important;
 }
 
+.clip-right {
+  overflow: hidden;
+  padding: 0.5em 0;
+  margin: -0.5em 0;
+}
+
 .smooth-ease-l {
   transition: all .8s cubic-bezier(0.86, 0, 0.14, 1);
 }
@@ -273,6 +279,14 @@ table {
 .move-right{
   animation: move-right 1.5s cubic-bezier(1.0, 0, 0, 1) forwards;
 }
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
 
 .appear-left{
   animation: appear-left 1.5s cubic-bezier(1.0, 0, 0, 1) forwards;
