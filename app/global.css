@@ -224,6 +224,10 @@ table {
   -webkit-text-fill-color: transparent !important;
 }
 
+.dark .stroked {
+  -webkit-text-stroke-color: #F1F1F1 !important;
+}
+
 .smooth-ease-l {
   transition: all .8s cubic-bezier(0.86, 0, 0.14, 1);
 }

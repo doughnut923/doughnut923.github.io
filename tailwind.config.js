@@ -12,10 +12,16 @@ module.exports = {
           },
         },
       },
+      colors: {
+        dark: '#111010',
+      },
       fontSize: {
         '2xl': '1.75rem',
         '3xl': '2rem',
         'xxl': '12.25rem'
+      },
+      scale: {
+        '150': '1.5',
       },
       keyframes: {
         "slide-left": {
