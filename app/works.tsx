@@ -34,15 +34,15 @@ export default function Works() {
                     <ProjectCard link={"https://github.com/doughnut923/pwc-winner-2024"}  
                     title={"Zen1th"} 
                     description={"Online Exam Proctoring Software that uses CV to detect cheating and ensure academic integrity."}
-                    image={"https://i.imgur.com/9nXo7sP.png"}
+                    image={"zen1th.png"}
                     delay={200}
                       />
                 </div>
                 <div className="col-span-full md:col-start-5 md:col-span-3 md:row-start-4 md:row-span-4 mb-12 ">
-                    <ProjectCard link={"https://github.com/lokman524/Peter-Griffin"} title={"Peter Griffin Reels Generator"} description={"(In Progress) Generates educational reels to replace doom scrolling."} image={"https://i.imgur.com/9nXo7sP.png"} delay={600} />
+                    <ProjectCard link={"https://github.com/lokman524/futu-portfolio"} title={"FutuPort"} description={"Futu Portfolio Tracker & Optimizer"} image={"futu.png"} delay={600} />
                 </div>
                 <div className="col-span-full md:col-start-2 md:col-span-3 md:row-start-7 md:row-span-4 mb-12">
-                    <ProjectCard link={"https://github.com/doughnut923/Blossom"} title={"Blossom"} description={"A personal project where I designed a keyboard case inspired from the Alice layout."} image={"https://i.imgur.com/9nXo7sP.png"} delay={1000} />
+                    <ProjectCard link={"https://github.com/doughnut923/Blossom"} title={"Blossom"} description={"A personal project where I designed a keyboard case inspired from the Alice layout."} image={"blossom.png"} delay={1000} />
                 </div>
             </div>
         </>
