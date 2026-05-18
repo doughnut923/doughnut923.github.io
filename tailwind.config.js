@@ -26,10 +26,32 @@ module.exports = {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0%)" },
         },
+        "slide-left-fast-slow": {
+          "0%": { transform: "translateX(0%)" },
+          "8%": { transform: "translateX(-15%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "slide-right-fast-slow": {
+          "0%": { transform: "translateX(-50%)" },
+          "8%": { transform: "translateX(-35%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        "slide-left-normal": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "slide-right-normal": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
       },
       animation: {
         "slide-left": "slide-left 25s linear infinite",
         "slide-right": "slide-right 25s linear infinite ",
+        "slide-left-fast-slow": "slide-left-fast-slow 25s cubic-bezier(0.25, 0.1, 0.25, 1) infinite",
+        "slide-right-fast-slow": "slide-right-fast-slow 25s cubic-bezier(0.25, 0.1, 0.25, 1) infinite",
+        "slide-left-normal": "slide-left-normal 25s linear infinite",
+        "slide-right-normal": "slide-right-normal 25s linear infinite",
       },
     },
   },
