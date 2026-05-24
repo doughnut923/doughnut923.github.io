@@ -20,10 +20,10 @@ export default function Navigation() {
 
     return (
         <nav className="mt-2 md:mt-0 w-full">
-            <ul ref={ref} className={`w-full ${isVisible ? 'appear-right' : 'opacity-0'}`}>
-                <li><a href="#cv" className="text-lg font-light text-gray-900 dark:text-gray-100 hover:font-bold block w-full text-right md:hover:scale-x-150 md:hover:translate-x-[-30%] smooth-ease-l scroll-smooth delay-100">important</a></li>
-                <li><a href="#work" className="text-lg font-light text-gray-900 dark:text-gray-100 hover:font-bold block w-full text-right md:hover:scale-x-150 md:hover:translate-x-[-30%] smooth-ease-l  scroll-smooth delay-200">projects</a></li>
-                <li><a href="#contact" className="text-lg font-light text-gray-900 dark:text-gray-100 hover:font-bold block w-full text-right md:hover:scale-x-150 md:hover:translate-x-[-30%] smooth-ease-l  scroll-smooth delay-300">call me</a></li>
+            <ul ref={ref} className="flex-col">
+                <li className="flex flex-row-reverse"><a href="#cv" className="w-fit appear-right animate-delay-500 text-lg font-light text-gray-900 dark:text-gray-100 hover:font-bold block text-right md:hover:scale-x-150 md:hover:translate-x-[-30%] smooth-ease-l scroll-smooth">important</a></li>
+                <li className="flex flex-row-reverse"><a href="#work" className="w-fit appear-right animate-delay-600 text-lg font-light text-gray-900 dark:text-gray-100 hover:font-bold block text-right md:hover:scale-x-150 md:hover:translate-x-[-30%] smooth-ease-l  scroll-smooth">projects</a></li>
+                <li className="flex flex-row-reverse"><a href="#contact" className="w-fit appear-right animate-delay-700 text-lg font-light text-gray-900 dark:text-gray-100 hover:font-bold block text-right md:hover:scale-x-150 md:hover:translate-x-[-30%] smooth-ease-l  scroll-smooth">call me</a></li>
             </ul>
         </nav>
     );

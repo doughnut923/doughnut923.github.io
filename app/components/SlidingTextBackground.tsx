@@ -49,7 +49,7 @@ export default function SlidingTextBackground() {
     };
 
     return (
-        <div ref={ref} className="w-full md:absolute md:top-[50%] md:translate-y-[-50%] overflow-hidden">
+        <div ref={ref} className="w-full absolute top-[50%] translate-y-[-50%] overflow-hidden">
             {lines1.map((text, idx) => (
                 <div
                     key={idx}

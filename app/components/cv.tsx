@@ -4,7 +4,7 @@ import BigAssMesh from "./big-ass-mesh";
 
 export default function CV() {
   return (
-    <div id="cv" className="relative bg-transparent w-full block col-span-full overflow-hidden items-center justify-center md:h-screen min-h-screen py-20">
+    <div id="cv" className="relative bg-transparent w-full block col-span-full overflow-hidden items-center justify-center min-h-screen md:min-h-[720px] lg:min-h-[1080px]">
         <SlidingTextBackground />
         <CVPDF />
     </div>

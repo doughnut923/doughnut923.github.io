@@ -57,6 +57,14 @@
   font-style: normal;
 }
 
+.animate-delay-100 { animation-delay: 100ms !important; }
+.animate-delay-200 { animation-delay: 200ms !important; }
+.animate-delay-300 { animation-delay: 300ms !important; }
+.animate-delay-400 { animation-delay: 400ms !important; }
+.animate-delay-500 { animation-delay: 500ms !important; }
+.animate-delay-600 { animation-delay: 600ms !important; }
+.animate-delay-700 { animation-delay: 700ms !important; }
+
 
 html{
   font-family: Primary-Font, Arial, Helvetica, sans-serif;
@@ -246,9 +254,13 @@ table {
   overflow: hidden;
 }
 
+.appear-left, .appear-right{
+  opacity: 0;
+}
 
 @keyframes appear-left {
   from {
+    opacity: 0;
     transform: translateX(-100%);
   }
   to {
@@ -259,6 +271,7 @@ table {
 @keyframes appear-right {
   from {
     transform: translateX(100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
@@ -280,14 +293,6 @@ table {
   animation: move-right 1.5s cubic-bezier(1.0, 0, 0, 1) forwards;
 }
 
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }
-.delay-500 { animation-delay: 0.5s; }
-.delay-600 { animation-delay: 0.6s; }
-.delay-700 { animation-delay: 0.7s; }
-
 .appear-left{
   animation: appear-left 1.5s cubic-bezier(1.0, 0, 0, 1) forwards;
 }
@@ -295,6 +300,8 @@ table {
 .appear-right{
   animation: appear-right 1.5s cubic-bezier(1.0, 0, 0, 1) forwards;
 }
+
+
 
 @keyframes fade-in {
   from {
