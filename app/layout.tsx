@@ -42,7 +42,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -94,6 +99,7 @@ export default function RootLayout({
           href="/feed.json"
           title="JSON Feed"
         />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="scroll-smooth antialiased flex flex-col items-center justify-center mx-auto lg:mt-0 overflow-x-hidden lg:max-w-[1600px] mb-2 lg:mb-3 min-h-screen min-w-[360px]">
         <ThemeProvider
